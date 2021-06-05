@@ -15,7 +15,7 @@ void teste_tempo( void (*f)(lista*, long), lista* lista, double proporcao){
             for(int i = 0;i<j;i++){
                 insere_lista(lista, rand()%j);
             }
-            
+
             clock_t tempo_ini = 0;
             
             // Ordenando com elementos aleatórios
@@ -48,10 +48,13 @@ int main()
     lista* lista = cria_lista();
     
     printf("TESTANDO O ALGORITMO BUBBLESORT\n");
-    teste_tempo(bubble_sort,lista,1);
+    //teste_tempo(bubble_sort,lista,1);
 
     printf("\nTESTANDO O ALGORITMO BUBBLESORT OTIMIZADO\n");
-    teste_tempo(bubble_sort_otimizado,lista,1);
+    //teste_tempo(bubble_sort_otimizado,lista,1);
+
+    printf("\nTESTANDO O ALGORITMO RADIXSORT\n");
+    teste_tempo(radix_sort,lista,1);
     
     
     destroi_lista(lista);

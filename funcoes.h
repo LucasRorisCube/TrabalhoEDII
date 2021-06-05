@@ -1,4 +1,4 @@
-#define TAM 10000
+#define TAM 100000
 #define REPS 10
 
 typedef int elem;
@@ -16,3 +16,5 @@ void insere_lista(lista* lista, elem num);
 void bubble_sort(lista* lista, long final);
 void bubble_sort_otimizado(lista* lista, long final);
 void bubble_sort_inverso(lista* lista, long final);
+void radix_sort(lista* lista, long final);
+void counting_sort(lista* lista, long final, long posicao);
