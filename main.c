@@ -48,17 +48,17 @@ int main()
     lista* lista = cria_lista();
     
     printf("TESTANDO O ALGORITMO BUBBLESORT\n");
-    //teste_tempo(bubble_sort,lista,1);
+    teste_tempo(bubble_sort,lista,1);
 
     printf("\nTESTANDO O ALGORITMO BUBBLESORT OTIMIZADO\n");
-    //teste_tempo(bubble_sort_otimizado,lista,1);
+    teste_tempo(bubble_sort_otimizado,lista,1);
+
+    printf("\nTESTANDO O ALGORITMO QUICKSORT\n");
+    teste_tempo(chamada_quick_sort,lista,1);
 
     printf("\nTESTANDO O ALGORITMO RADIXSORT\n");
-    //teste_tempo(radix_sort,lista,1);
+    teste_tempo(radix_sort,lista,1);
     
-    printf("\nTESTANDO O ALGORITMO QUICKSORT\n");
-    //teste_tempo(chamada_quick_sort,lista,1);
-
     printf("\nTESTANDO O ALGORITMO HEAPSORT\n");
     teste_tempo(heap_sort,lista,1);
     
