@@ -1,5 +1,5 @@
 #define TAM 100000
-#define REPS 10
+#define REPS 20
 
 typedef int elem;
 

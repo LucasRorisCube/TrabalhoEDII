@@ -1,0 +1,54 @@
+TESTANDO O ALGORITMO BUBBLESORT
+Tempo gasto para ordenar 1000 elementos aleatorios: 0.001797
+Tempo gasto para ordenar 1000 elementos ordenados em ordem crescente: 0.001102
+Tempo gasto para ordenar 1000 elementos ordenados em ordem decrescente: 0.002133
+Tempo gasto para ordenar 10000 elementos aleatorios: 0.222128
+Tempo gasto para ordenar 10000 elementos ordenados em ordem crescente: 0.110055
+Tempo gasto para ordenar 10000 elementos ordenados em ordem decrescente: 0.198914
+Tempo gasto para ordenar 100000 elementos aleatorios: 28.533857
+Tempo gasto para ordenar 100000 elementos ordenados em ordem crescente: 11.414832
+Tempo gasto para ordenar 100000 elementos ordenados em ordem decrescente: 21.676579
+
+TESTANDO O ALGORITMO BUBBLESORT OTIMIZADO
+Tempo gasto para ordenar 1000 elementos aleatorios: 0.002025
+Tempo gasto para ordenar 1000 elementos ordenados em ordem crescente: 0.000003
+Tempo gasto para ordenar 1000 elementos ordenados em ordem decrescente: 0.002351
+Tempo gasto para ordenar 10000 elementos aleatorios: 0.226122
+Tempo gasto para ordenar 10000 elementos ordenados em ordem crescente: 0.000023
+Tempo gasto para ordenar 10000 elementos ordenados em ordem decrescente: 0.200975
+Tempo gasto para ordenar 100000 elementos aleatorios: 26.714216
+Tempo gasto para ordenar 100000 elementos ordenados em ordem crescente: 0.000227
+Tempo gasto para ordenar 100000 elementos ordenados em ordem decrescente: 20.266559
+
+TESTANDO O ALGORITMO QUICKSORT
+Tempo gasto para ordenar 1000 elementos aleatorios: 0.000083
+Tempo gasto para ordenar 1000 elementos ordenados em ordem crescente: 0.000057
+Tempo gasto para ordenar 1000 elementos ordenados em ordem decrescente: 0.000064
+Tempo gasto para ordenar 10000 elementos aleatorios: 0.001020
+Tempo gasto para ordenar 10000 elementos ordenados em ordem crescente: 0.000649
+Tempo gasto para ordenar 10000 elementos ordenados em ordem decrescente: 0.000696
+Tempo gasto para ordenar 100000 elementos aleatorios: 0.012525
+Tempo gasto para ordenar 100000 elementos ordenados em ordem crescente: 0.007790
+Tempo gasto para ordenar 100000 elementos ordenados em ordem decrescente: 0.008089
+
+TESTANDO O ALGORITMO RADIXSORT
+Tempo gasto para ordenar 1000 elementos aleatorios: 0.000120
+Tempo gasto para ordenar 1000 elementos ordenados em ordem crescente: 0.000124
+Tempo gasto para ordenar 1000 elementos ordenados em ordem decrescente: 0.000125
+Tempo gasto para ordenar 10000 elementos aleatorios: 0.001521
+Tempo gasto para ordenar 10000 elementos ordenados em ordem crescente: 0.001505
+Tempo gasto para ordenar 10000 elementos ordenados em ordem decrescente: 0.001576
+Tempo gasto para ordenar 100000 elementos aleatorios: 0.016549
+Tempo gasto para ordenar 100000 elementos ordenados em ordem crescente: 0.016735
+Tempo gasto para ordenar 100000 elementos ordenados em ordem decrescente: 0.015779
+
+TESTANDO O ALGORITMO HEAPSORT
+Tempo gasto para ordenar 1000 elementos aleatorios: 0.000134
+Tempo gasto para ordenar 1000 elementos ordenados em ordem crescente: 0.000122
+Tempo gasto para ordenar 1000 elementos ordenados em ordem decrescente: 0.000112
+Tempo gasto para ordenar 10000 elementos aleatorios: 0.001711
+Tempo gasto para ordenar 10000 elementos ordenados em ordem crescente: 0.001453
+Tempo gasto para ordenar 10000 elementos ordenados em ordem decrescente: 0.001364
+Tempo gasto para ordenar 100000 elementos aleatorios: 0.022316
+Tempo gasto para ordenar 100000 elementos ordenados em ordem crescente: 0.017437
+Tempo gasto para ordenar 100000 elementos ordenados em ordem decrescente: 0.016463
