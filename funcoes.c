@@ -79,6 +79,47 @@ void bubble_sort_inverso(lista* lista, long final){
     }
 }
 
+long partition(lista* lista, long inicio, long final){
+    long pivo = lista->elementos[final];
+    long i = inicio-1;
+    elem tmp;
+    for(long j = inicio; j < final;j++){
+        if(lista->elementos[j] <= pivo){
+            i = i+1;
+            tmp = lista->elementos[j];
+            lista->elementos[j] = lista->elementos[i];
+            lista->elementos[i] = tmp;
+        }
+    }
+    tmp = lista->elementos[i+1];
+    lista->elementos[i+1] = lista->elementos[final];
+    lista->elementos[final] = tmp;
+    return (i+1);
+}
+
+long random_partition(lista* lista, long inicio, long final){
+    long k = inicio + rand()%(final-inicio);
+    elem tmp = lista->elementos[k];
+    lista->elementos[k] = lista->elementos[final];
+    lista->elementos[final] = tmp;
+    return partition(lista,inicio,final);
+}
+
+void quick_sort(lista* lista, long inicio, long final){
+    if(inicio < final){
+        long pivo = random_partition(lista,inicio,final);
+        quick_sort(lista,inicio,pivo-1);
+        quick_sort(lista,pivo+1,final);
+    }
+}
+
+void chamada_quick_sort(lista* lista, long final){
+    quick_sort(lista,0,final-1);
+}
+
+
+
+
 void radix_sort(lista* lista, long final){
     elem maior = 0;
     for(int i = 0;i < final;i++){
@@ -123,3 +164,37 @@ void counting_sort(lista* list, long final, long posicao){
         list->elementos[i] = C->elementos[i];
     }
 }
+
+
+void heapify(lista* lista,long final,long i){
+    long maior = i;
+    long esquerda = 2*i + 1;
+    long direita = 2*i + 2;
+    if(esquerda < final && lista->elementos[esquerda] > lista->elementos[maior]){
+        maior = esquerda;
+    }
+    if(direita < final && lista->elementos[direita] > lista->elementos[maior]){
+        maior = direita;
+    }
+    if (maior != i){
+        elem tmp = lista->elementos[i];
+        lista->elementos[i] = lista->elementos[maior];
+        lista->elementos[maior] = tmp;
+        heapify(lista,final,maior);
+    }
+}
+
+void heap_sort(lista* lista, long final){
+    long i;
+    
+    for(i = (final/2)-1;i >= 0;i--){
+        heapify(lista,final,i);
+    }
+    for(i = final-1;i >= 1;i--){
+        elem tmp = lista->elementos[0];
+        lista->elementos[0] = lista->elementos[i];
+        lista->elementos[i] = tmp;
+        heapify(lista,i,0);
+    }
+}
+

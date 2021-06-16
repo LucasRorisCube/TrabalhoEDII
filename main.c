@@ -17,7 +17,7 @@ void teste_tempo( void (*f)(lista*, long), lista* lista, double proporcao){
             }
 
             clock_t tempo_ini = 0;
-            
+
             // Ordenando com elementos aleatórios
             tempo_ini = clock();
             f(lista,lista->tam * proporcao);
@@ -54,7 +54,13 @@ int main()
     //teste_tempo(bubble_sort_otimizado,lista,1);
 
     printf("\nTESTANDO O ALGORITMO RADIXSORT\n");
-    teste_tempo(radix_sort,lista,1);
+    //teste_tempo(radix_sort,lista,1);
+    
+    printf("\nTESTANDO O ALGORITMO QUICKSORT\n");
+    //teste_tempo(chamada_quick_sort,lista,1);
+
+    printf("\nTESTANDO O ALGORITMO HEAPSORT\n");
+    teste_tempo(heap_sort,lista,1);
     
     
     destroi_lista(lista);
