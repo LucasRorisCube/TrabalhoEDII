@@ -66,19 +66,6 @@ void bubble_sort_otimizado(lista* lista, long final){
     }
 }
 
-void bubble_sort_inverso(lista* lista, long final){
-
-    for(long i = 0; i<final-1;i++){
-        for(long j = 0; j<final-i-1;j++){
-            if(lista->elementos[j] < lista->elementos[j+1]){
-                elem temp = lista->elementos[j];
-                lista->elementos[j] = lista->elementos[j+1];
-                lista->elementos[j+1] = temp;
-            }
-        }
-    }
-}
-
 long partition(lista* lista, long inicio, long final){
     long pivo = lista->elementos[final];
     long i = inicio-1;

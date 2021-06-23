@@ -29,7 +29,11 @@ void teste_tempo( void (*f)(lista*, long), lista* lista, double proporcao){
             soma_tempos_crescente += clock() - tempo_ini;
             
             // Ordenando uma lista ordenada em ordem decrescente
-            bubble_sort_inverso(lista,lista->tam * proporcao);
+            for(int k = 0; k < lista->tam/2;k++){
+                elem temp = lista->elementos[k];
+                lista->elementos[k] = lista->elementos[lista->tam-k-1];
+                lista->elementos[lista->tam-k-1] = temp;
+            }
             tempo_ini = clock();
             f(lista,lista->tam * proporcao);
             soma_tempos_decrescente += clock() - tempo_ini;
@@ -48,10 +52,10 @@ int main()
     lista* lista = cria_lista();
     
     printf("TESTANDO O ALGORITMO BUBBLESORT\n");
-    teste_tempo(bubble_sort,lista,1);
+    //teste_tempo(bubble_sort,lista,1);
 
     printf("\nTESTANDO O ALGORITMO BUBBLESORT OTIMIZADO\n");
-    teste_tempo(bubble_sort_otimizado,lista,1);
+    //teste_tempo(bubble_sort_otimizado,lista,1);
 
     printf("\nTESTANDO O ALGORITMO QUICKSORT\n");
     teste_tempo(chamada_quick_sort,lista,1);
